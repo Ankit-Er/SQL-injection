@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td colspan="2">Login User</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                @Html.TextBox("UserID")
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                @Html.Password("Password")
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="submit" id="btnSubmit" />
+            </td>
+        </tr>
+
+    </table>
+}
+
